@@ -1,0 +1,24 @@
+In this challenge, your database table is structured like this:
+
++----------------
+| id | value_num
++----------------
+| 1 | -56
++----------------
+| 2 | 78
++----------------
+| 3 | -84
++----------------
+| 4 | 96
++----------------
+| 5 | -47
++----------------
+
+The challenge is to write a SQL query for this table that’ll return all the opposites of the values in the Value column. 
+If a number is negative, make it positive and vice versa. Here’s what your query should return:
+
+56, -76, 84, -96, 47
+
+Solution
+
+SELECT value_num - (value_num * 2) as value_num FROM `numbers`

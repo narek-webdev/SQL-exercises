@@ -1,0 +1,23 @@
+In this challenge, your database table looks like this:
+
++----------------
+| id | year
++----------------
+| 1 | 1776
++----------------
+| 2 | 2001
++----------------
+| 3 | 1643
++----------------
+| 4 | 1865
++----------------
+| 5 | 1969
++----------------
+
+Write a query for the table above that’ll return the century that the year is in. The results of this query should have the following values:
+
+18, 21, 17, 19, 20
+
+Solution
+
+SELECT FLOOR((year - 1) / 100 + 1) AS century FROM `years`;

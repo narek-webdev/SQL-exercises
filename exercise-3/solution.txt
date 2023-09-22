@@ -1,0 +1,23 @@
+Here’s the database table you’ll use in this challenge:
+
++----------------
+| id | value_num
++----------------
+| 1 | 4
++----------------
+| 2 | 11
++----------------
+| 3 | 57
++----------------
+| 4 | 24
++----------------
+| 5 | 47
++----------------
+
+Your job is to return whether or not the number in the Value column is even or odd rather than returning the number itself. Your query should return the following values:
+
+even, odd, odd, even, odd
+
+Solution
+
+SELECT IF(value_num % 2, 'odd', 'even') as result FROM `even_odd`;
